@@ -1,0 +1,107 @@
+{
+  "run": "run1",
+  "date": "2026-08-07",
+  "creators": 28,
+  "videos": 1237,
+  "label_balance": {
+    "low": 422,
+    "high": 413,
+    "mid": 402
+  },
+  "per_creator_counts": {
+    "fruitninjutsu": 83,
+    "drinkfreakessentials": 77,
+    "brewkrewcoffee": 69,
+    "athleticbrewing": 60,
+    "coffeebyhailey": 60,
+    "healthade": 59,
+    "drinksbyallyy": 58,
+    "nocco": 58,
+    "lacroixwater": 57,
+    "bloomsupps": 50,
+    "drinkspindrift": 48,
+    "coffeewithrafaela": 47,
+    "drinkculturepop": 47,
+    "created2coffee": 46,
+    "drinknixie": 46,
+    "picakidz": 46,
+    "buckedup": 43,
+    "longdrink": 41,
+    "drinkpoppi": 34,
+    "ryse": 32,
+    "polarseltzer": 31,
+    "waterloosparkling": 31,
+    "ghostenergy": 23,
+    "thevibecoffee": 22,
+    "celsiusofficial": 21,
+    "zoaenergy": 18,
+    "drinkolipop": 16,
+    "drinkloverboy": 14
+  },
+  "metrics_groupkfold_5fold": {
+    "most_frequent": {
+      "acc": 0.341,
+      "f1": 0.17
+    },
+    "logistic_all": {
+      "acc": 0.381,
+      "f1": 0.376
+    },
+    "transformer": {
+      "acc": 0.389,
+      "acc_std": 0.004,
+      "f1": 0.383,
+      "rank": 0.551
+    },
+    "mlp_all": {
+      "acc": 0.395,
+      "acc_std": 0.006,
+      "f1": 0.389,
+      "rank": 0.559
+    },
+    "mlp_clip_only": {
+      "acc": 0.403,
+      "acc_std": 0.013,
+      "f1": 0.397,
+      "rank": 0.554
+    }
+  },
+  "mlp_modality_ablation_5seed": {
+    "clip": {
+      "acc": 0.403,
+      "rank": 0.554
+    },
+    "text": {
+      "acc": 0.36,
+      "rank": 0.526
+    },
+    "clap": {
+      "acc": 0.326,
+      "rank": 0.483
+    },
+    "clip+text": {
+      "acc": 0.385,
+      "rank": 0.555
+    },
+    "clip+clap": {
+      "acc": 0.38,
+      "rank": 0.547
+    },
+    "text+clap": {
+      "acc": 0.359,
+      "rank": 0.519
+    },
+    "clip+text+clap": {
+      "acc": 0.395,
+      "rank": 0.559
+    }
+  },
+  "silent_audio_ablation": {
+    "has_audio_n": 1112,
+    "has_audio_noaudio": 0.38,
+    "has_audio_full": 0.393,
+    "silent_n": 125,
+    "silent_noaudio": 0.426,
+    "silent_full": 0.41
+  }
+}

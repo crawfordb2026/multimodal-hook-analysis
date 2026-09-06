@@ -216,3 +216,10 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Project data: raw scraper exports, downloaded videos, generated metadata
+data/
+archive/
+
+# macOS
+.DS_Store
